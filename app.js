@@ -232,13 +232,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const icon = themeToggleBtn.querySelector('.theme-icon');
     const text = themeToggleBtn.querySelector('.theme-text');
+    const headerLogo = document.getElementById('headerLogoImg');
+    const footerLogo = document.getElementById('footerLogoImg');
     
     if (newTheme === 'light') {
       icon.textContent = '☀️';
       text.textContent = 'Modo Claro';
+      if (headerLogo) headerLogo.src = 'logo-afortec-light.png';
+      if (footerLogo) footerLogo.src = 'logo-afortec-light.png';
     } else {
       icon.textContent = '🌙';
       text.textContent = 'Modo Escuro';
+      if (headerLogo) headerLogo.src = 'logo-afortec-dark.png';
+      if (footerLogo) footerLogo.src = 'logo-afortec-dark.png';
     }
   });
 
