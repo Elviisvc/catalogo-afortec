@@ -123,16 +123,26 @@ body {
   text-decoration: none;
 }
 
-.brand-official-logo-img {
-  height: 56px;
-  width: auto;
-  object-fit: contain;
-  display: block;
+.brand-logo-card {
+  background: #FFFFFF;
+  padding: 6px 16px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition-fast);
 }
 
-.brand-official-logo-img:hover {
-  transform: scale(1.04);
+.brand-logo-card:hover {
+  transform: scale(1.03);
+}
+
+.brand-official-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-text {
