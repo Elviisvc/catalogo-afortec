@@ -123,19 +123,19 @@ body {
   text-decoration: none;
 }
 
-.brand-logo-icon {
-  width: 44px;
-  height: 44px;
-  background: var(--accent-gradient);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFF;
-  font-weight: 900;
-  font-size: 22px;
-  font-family: var(--font-heading);
-  box-shadow: var(--shadow-glow);
+.brand-official-logo {
+  height: 52px;
+  width: auto;
+  display: block;
+  transition: transform var(--transition-fast);
+}
+
+.brand-official-logo:hover {
+  transform: scale(1.03);
+}
+
+[data-theme="light"] .brand-official-logo {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .brand-text {
